@@ -696,6 +696,7 @@ Please modify "admin_key" in conf/config.yaml .
 
         for name, value in pairs(exported_vars) do
             if value then
+                -- test-ci
                 table_insert(sys_conf["envs"], name .. "=" .. value)
             end
         end
